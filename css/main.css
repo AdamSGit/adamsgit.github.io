@@ -1,0 +1,167 @@
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: #f2f2f2;
+	font-family: Gudea, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+	color: #333;
+}
+
+/* Hidden textarea used to copy install command to clipboard */
+textarea#install-command-copy {
+	position: absolute;
+	left: -9999px;
+	opacity: 0;
+	pointer-events: none;
+}
+
+section#homepage-hero {
+	position: relative;
+	height: 100vh;
+	padding-top: 40px;
+}
+
+section#homepage-hero .logo {
+	margin-bottom: 50px;
+}
+
+section#homepage-hero .logo img {
+	width: 130px;
+}
+
+section#homepage-hero .github-link {
+	display: block;
+	position: absolute;
+	top: 16px;
+	right: 20px;
+	opacity: .6;
+	transition: opacity .3s ease;
+}
+
+section#homepage-hero .github-link:hover {
+	opacity: .9;
+}
+
+section#homepage-hero .github-link img {
+	width: 28px;
+	height: 28px;
+}
+
+section#homepage-hero .install-command-container {
+	margin-bottom: 30px;
+}
+
+section#homepage-hero .install-command 
+{
+	width: 496px;
+	max-width: 100%;
+	overflow-y: scroll;
+	cursor: pointer;
+}
+
+section#homepage-hero .install-command code {
+	display: block;
+	width: 464px;
+}
+
+section#homepage-hero .install-command-container .copied-notice {
+	position: absolute;
+	bottom: -28px;
+	left: 50%;
+	transform: translateX(-50%);
+	font-weight: bold;
+	font-size: .9rem;
+	pointer-events: none;
+	opacity: 0;
+	transition: opacity .2s ease;
+}
+
+section#homepage-hero .install-command-container .copied-notice.visible {
+	opacity: 1;
+}
+
+section#homepage-hero .legend {
+	margin: 0 auto;
+	width: 535px;
+	max-width: 100%;
+}
+
+section#homepage-hero .nav-buttons {
+	margin-bottom: 50px;
+}
+
+section#homepage-hero .fuel-drop-video {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+
+section#homepage-hero .fuel-drop-video video {
+	width: 800px;
+	max-width: 100%;
+	vertical-align: top;
+}
+
+.content-section-image {
+	padding: 0 40px;
+}
+
+.content-section span {
+}
+
+.content-section p {
+	font-size: 1.125rem;
+}
+
+@media (max-width: 767px) {
+	.content-section-image {
+		margin-bottom: 40px;
+	}
+
+	.content-section h3 {
+		font-size: 2rem;
+	}
+}
+
+@media (min-width: 768px) {
+	section#homepage-hero .logo {
+		margin-bottom: 80px;
+	}
+
+	section#homepage-hero .logo img {
+		width: 190px;
+	}
+
+	section#homepage-hero .github-link {
+		top: 20px;
+		right: 24px;
+	}
+
+	section#homepage-hero .github-link img {
+		width: 36px;
+		height: 36px;
+	}
+
+	section#homepage-hero .install-command-container
+	{
+		margin-bottom: 50px;
+	}
+
+	section#homepage-hero .nav-buttons {
+		margin-bottom: 80px;
+	}
+
+	.content-section-image {
+		padding: 0 90px;
+	}
+
+	.pt-md-6 {
+		padding-top: 4rem !important;
+	}
+
+	.pb-md-6 {
+		padding-bottom: 4rem !important;
+	}
+}
