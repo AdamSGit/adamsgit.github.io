@@ -34,10 +34,20 @@
           <img src="/img/logo.svg" alt="Logo">
         </div>
 
-        <!-- Github link -->
-        <a href="https://github.com/fuel/fuel" target="_blank" rel="noreferrer noopener" class="github-link">
-          <img src="/img/github.svg" alt="Github">
-        </a>
+        <!-- Top right actions -->
+        <nav class="top-right-actions d-flex align-items-center">
+          
+          <!-- Menu toggle -->
+          <a href="#" class="text-secondary menu-toggle d-block mr-3 mr-md-4">
+            <i data-feather="menu"></i>
+          </a>
+
+          <!-- Github link -->
+          <a href="https://github.com/fuel/fuel" target="_blank" rel="noreferrer noopener" class="github-link">
+            <img src="/img/github.svg" alt="Github">
+          </a>
+
+        </nav>
 
         <!-- Main title -->
         <h1 class="h4 text-center text-uppercase">A drop of <span class="text-secondary font-weight-bold">fuel</span> is all it takes to power your app <span class="text-secondary font-weight-bold">engine</span></h1>
@@ -49,7 +59,7 @@
               <span style="color: #9cdcfe">curl</span> <span style="color: #dcdcaa">https:</span><span>//get.fuelphp.com/oil <span style="color: #9cdcfe">|</span> sh <span style="color: #9cdcfe">&&</span> oil make myapp</span>
             </code>
           </div>
-          <span class="copied-notice text-secondary">Copied to clipboard</span>
+          <span class="copied-notice text-secondary"><i data-feather="clipboard" class="mr-2"></i>Copied to clipboard</span>
         </div>
 
         <!-- Legend -->
@@ -81,7 +91,8 @@
 
       <!-- Fuel drop video -->
       <section class="text-center fuel-drop-video">
-        <video autoplay muted loop>
+        <video autoplay muted loop poster="/img/poster.jpg">
+          <source src="/img/fuel.webm" type="video/webm">
           <source src="/img/fuel.mp4" type="video/mp4">
         </video>
       </section>
@@ -98,9 +109,9 @@
 
           <div class="col-md-6 content-section">
             <h3 class="h1 mb-4"><span class="text-primary font-weight-bold text-uppercase">D</span>ISCOVER</h3>
-            <p>If you are new to the PHP framework Fuel then the best way to see what it's all about is to read through our Documentation and have a look at our Screencasts.</p>
+            <p>If you are new to the PHP framework Fuel then the best way to see what it's all about is to read through our <a href="#">Documentation</a> and have a look at our <a href="#">Screencasts</a>.</p>
 
-            <p class="mb-0">Any open-source project, especially a framework, requires great documentation and many have failed to achieve this. We feel that our documentation covers the API (Classes, Methods, etc) and we have a few guides but there can always be more. If you'd like to help us contribute then please write up anything you learn as a guide and submit it to us.</p>
+            <p class="mb-0">Any open-source project, especially a framework, requires great documentation and many have failed to achieve this. We feel that our documentation covers the <a href="#">API</a> (Classes, Methods, etc) and we have a few guides but there can always be more. If you'd like to help us contribute then please write up anything you learn as a guide and submit it to us.</p>
           </div>
         </div>
       </div>
@@ -111,7 +122,7 @@
         <div class="row align-items-center flex-column-reverse flex-md-row">
           <div class="col-md-6 content-section">
             <h3 class="h1 mb-4"><span class="text-primary font-weight-bold text-uppercase">F</span>EATURES</h3>
-            <p>FuelPHP is a MVC (Model-View-Controller) framework that was designed from the ground up to have full support for HMVC as part of its architecture. But we didn't stop there, we also added ViewModels (also known as presentation models) into the mix which give you the option to add a powerful layer between the Controller and the View.</p>
+            <p>FuelPHP is a MVC (<a href="#">Model-View-Controller</a>) framework that was designed from the ground up to have full support for <a href="#">HMVC</a> as part of its architecture. But we didn't stop there, we also added <a href="#">ViewModels</a> (also known as <a href="#">presentation models</a>) into the mix which give you the option to add a powerful layer between the Controller and the View.</p>
 
             <p class="mb-0">FuelPHP also supports a more router based approach where you might route directly to a closure which deals with the input uri, making the closure the controller and giving it control of further execution.</p>
           </div>
@@ -133,7 +144,7 @@
             <h3 class="h1 mb-4"><span class="text-primary font-weight-bold text-uppercase">C</span>ONTRIBUTE</h3>
             <p>Whether you're an experienced PHP developer or a newcomer just getting started, there are many ways for you to participate in the FuelPHP project.</p>
 
-            <p>Join the forum to get help or help others with FuelPHP, find and report bugs, review documentation, or send your wish list for new features, or find other creative ways to contribute.</p>
+            <p>Join the <a href="#">forum</a> to get help or help others with FuelPHP, find and report bugs, review documentation, or send your wish list for new features, or find other creative ways to contribute.</p>
 
             <p class="mb-0">Whatever you do, becoming an active member of the FuelPHP community is your step to creating something amazing.</p>
           </div>

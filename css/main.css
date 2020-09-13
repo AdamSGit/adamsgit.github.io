@@ -20,6 +20,7 @@ textarea#install-command-copy {
 section#homepage-hero {
 	position: relative;
 	height: 100vh;
+	height: calc(var(--vh, 1vh) * 100);
 	padding-top: 40px;
 }
 
@@ -31,11 +32,14 @@ section#homepage-hero .logo img {
 	width: 130px;
 }
 
-section#homepage-hero .github-link {
-	display: block;
+.top-right-actions {
 	position: absolute;
 	top: 16px;
 	right: 20px;
+}
+
+section#homepage-hero .github-link {
+	display: block;
 	opacity: .6;
 	transition: opacity .3s ease;
 }
@@ -57,7 +61,7 @@ section#homepage-hero .install-command
 {
 	width: 496px;
 	max-width: 100%;
-	overflow-y: scroll;
+	overflow: hidden;
 	cursor: pointer;
 }
 
@@ -75,11 +79,18 @@ section#homepage-hero .install-command-container .copied-notice {
 	font-size: .9rem;
 	pointer-events: none;
 	opacity: 0;
-	transition: opacity .2s ease;
+	transition: opacity .2s ease, transform .2s ease;
+}
+
+section#homepage-hero .install-command-container .copied-notice svg {
+	width: 18px;
+	height: 18px;
+	vertical-align: middle;
 }
 
 section#homepage-hero .install-command-container .copied-notice.visible {
 	opacity: 1;
+	transform: translate(-50%, 10%);
 }
 
 section#homepage-hero .legend {
@@ -115,6 +126,12 @@ section#homepage-hero .fuel-drop-video video {
 	font-size: 1.125rem;
 }
 
+@media (max-width: 520px) {
+	section#homepage-hero .install-command {
+		overflow-x: scroll !important;
+	}
+}
+
 @media (max-width: 767px) {
 	.content-section-image {
 		margin-bottom: 40px;
@@ -134,7 +151,7 @@ section#homepage-hero .fuel-drop-video video {
 		width: 190px;
 	}
 
-	section#homepage-hero .github-link {
+	.top-right-actions {
 		top: 20px;
 		right: 24px;
 	}

@@ -1,6 +1,9 @@
 (function() {
 	'use strict';
 
+	// Get real page height on mobile
+	document.documentElement.style.setProperty('--vhdyn', `${window.innerHeight * 0.01}px`);
+
 	// Feather icons initialisation
 	feather.replace();
 
