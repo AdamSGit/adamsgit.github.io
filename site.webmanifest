@@ -1,6 +1,7 @@
 {
     "name": "FuelPHP Framework",
     "short_name": "FuelPHP",
+    "start_url": "https://adamsgit.github.io",
     "icons": [
         {
             "src": "/img/favicon/android-chrome-192x192.png",
