@@ -9,8 +9,10 @@
 
 	// Copy install code to clipboard on clip and display notice
 	document.querySelector('.install-command').addEventListener('click', function() {
-		document.querySelector('#install-command-copy').select();
+		const area = document.querySelector('#install-command-copy');
+		area.select();
         document.execCommand('copy');
+        area.blur();
 
         document.querySelector('.copied-notice').classList.add('visible');
 
