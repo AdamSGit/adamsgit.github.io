@@ -60,7 +60,6 @@ section#homepage-hero .install-command-container {
 
 section#homepage-hero .install-command 
 {
-	/* width: 496px; */
 	display: inline-block;
 	max-width: 100%;
 	overflow: hidden;
@@ -70,7 +69,6 @@ section#homepage-hero .install-command
 section#homepage-hero .install-command code {
 	display: block;
 	white-space: nowrap;
-	/* width: 464px; */
 }
 
 section#homepage-hero .install-command-container .copied-notice {
