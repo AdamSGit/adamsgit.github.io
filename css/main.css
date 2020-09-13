@@ -55,11 +55,13 @@ section#homepage-hero .github-link img {
 
 section#homepage-hero .install-command-container {
 	margin-bottom: 30px;
+	text-align: center;
 }
 
 section#homepage-hero .install-command 
 {
-	width: 496px;
+	/* width: 496px; */
+	display: inline-block;
 	max-width: 100%;
 	overflow: hidden;
 	cursor: pointer;
@@ -67,7 +69,8 @@ section#homepage-hero .install-command
 
 section#homepage-hero .install-command code {
 	display: block;
-	width: 464px;
+	white-space: nowrap;
+	/* width: 464px; */
 }
 
 section#homepage-hero .install-command-container .copied-notice {
