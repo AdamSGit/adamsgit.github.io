@@ -20,7 +20,7 @@ textarea#install-command-copy {
 section#homepage-hero {
 	position: relative;
 	height: 100vh;
-	height: calc(var(--vh, 1vh) * 100);
+	height: calc(var(--vhdyn, 1vh) * 100);
 	padding-top: 40px;
 }
 
